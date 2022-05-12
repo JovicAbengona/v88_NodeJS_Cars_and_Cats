@@ -13,19 +13,16 @@ var server = http.createServer(function(request, response){
     console.log('client request URL: ', request.url);
     // this is how we do routing:
     if(request.url === '/'){
-        file_path    = "views/index.html";
-        status_code  = 200;
-        content_type = "text/html";
+        file_path   = "views/index.html";
+        status_code = 200;
     }
     else if(request.url === "/cars"){
-        file_path    = "views/cars.html";
-        status_code  = 200;
-        content_type = "text/html";
+        file_path   = "views/cars.html";
+        status_code = 200;
     }
     else if(request.url === "/cats"){
-        file_path    = "views/cats.html";
-        status_code  = 200;
-        content_type = "text/html";
+        file_path   = "views/cats.html";
+        status_code = 200;
     }
     else if(request.url === "/stylesheets/index.css"){ // INDEX CSS
         file_path    = "stylesheets/index.css";
